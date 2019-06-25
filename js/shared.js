@@ -12,7 +12,6 @@ if (!window.WebGLRenderingContext){
 	var scene = new THREE.Scene();
 
 	// setup lighting
-
 	var ambient = new THREE.AmbientLight( 0x101030 );
 	ambient.name="light";
 	scene.add( ambient );
@@ -54,7 +53,7 @@ window.addEventListener( 'resize', onWindowResize, false );
 // function used to pass parameters to ajax for dweet io
 function sendToViewer(type, direction, distance, posX, posY, posZ, modelurl){
 	// update dweet io info
-	var dweeturl = "*****";
+	var dweeturl = "*****"; // replace with actual dweeturl
 	if (modelurl=='' || modelurl==null){
 		modelurl = 'objects/Other/H614.obj';
 	}
@@ -103,7 +102,7 @@ function getCurrentModel(scene){
 	 	};
 	 };
 	 return object;
-};
+	};
 
 // move object coordinates
 function moveModel(object, posX, posY, posZ){

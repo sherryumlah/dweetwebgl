@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>three.js webgl - loaders - OBJ loader</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<head>
+	<title>three.js webgl - loaders - OBJ loader</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="styles.css">
-	</head>
-
-	<body>
+</head>
+<body>
 	<div id="menu" class="menu">
-	<p class="expand master">MENU</p>
+		<p class="expand master">MENU</p>
 		<nav class="nav mainmenu">
-		<?php
+			<?php
 			$dir = 'objects';
 			$subdirs = scandir($dir);
-			// get directory list
 			echo "<ul class='nav'>";
 			for ($i=0; $i<(count($subdirs)); $i++){
 				if ($subdirs[$i]!='.' && $subdirs[$i]!='..'){
@@ -32,8 +30,8 @@
 					echo "</ul>";
 				}
 			}
-		echo "</ul>";
-		?>
+			echo "</ul>";
+			?>
 		</nav>
 	</div>
 	<div id="instruct" class="instruct">
@@ -44,9 +42,7 @@
 			Use the up, down, left, right arrow keys to move.<br>
 		</p>
 	</div>
-	<!-- canvas container -->
 	<div id="container"></div>
-
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 	<script src="js/three.min.js"></script>
 	<script src="js/OBJLoader.js"></script>
@@ -55,5 +51,5 @@
 	<script type="text/javascript" src="js/dweet.io.min.js"></script>
 	<script type="text/javascript" src="js/shared.js"></script>
 	<script type="text/javascript" src="js/js.js"></script>
-	</body>
+</body>
 </html>
